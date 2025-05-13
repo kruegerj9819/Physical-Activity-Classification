@@ -63,4 +63,13 @@ OOB Score (Bagging Classifier): 0.83
 - The confusion matrix for the Bagging Classifier will also display normalized values for each activity label.
 
 ## Interpretation
+### Importances Chart
+![physical-activity-importances](https://github.com/user-attachments/assets/00c7c05b-cb8d-4ffc-a1fa-474d8a0d0a4f)
+
+### Random Forest Confusion Matrix
+![random-forest-confusion-matrix](https://github.com/user-attachments/assets/30fb660b-c801-4553-be78-b6d952738c4d)
+
+### Bagging Classifier Confusion Matrix
+![bagging-classifier-confusion-matrix](https://github.com/user-attachments/assets/0bb560cb-534a-46de-b5ed-4fc337387d6d)
+
 Looking at the resulting confusion matrices, it seems that the Random Forest has a much higher precision than the Bagging Classifier on this dataset. The Bagging Classifier seems to have a lot of false positives which affect the overall accuracy of the model when looking at the diagnal. However, both models seem to have a hard time differentiating transient activities (short-term activities) from a lot of the other categories.
