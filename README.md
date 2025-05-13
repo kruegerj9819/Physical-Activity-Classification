@@ -22,9 +22,11 @@ The activities classified in the dataset include:
 
 ## Installation
 To run this project, clone this repository and install the necessary dependencies. You can use the following command to install the required libraries:
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
-## Requirements
+### Requirements
 - pandas
 - matplotlib
 - scikit-learn
@@ -34,7 +36,9 @@ To run this project, clone this repository and install the necessary dependencie
 2. Ensure that the dataset `clean_physical_activity.csv` is available in the same directory as the Python script.
 3. Run the Python script `Classification.py` to train and evaluate the models.
 
-`python Classification.py`
+```
+python Classification.py
+```
 
 The script will:
 - Load the dataset and preprocess the data.
@@ -50,7 +54,7 @@ The script will output:
 
 The **Random Forest Classifier** will also display a bar chart representing the feature importances, which helps in understanding which features contributed the most to the predictions.
 
-## Example Output
+### Example Output
 ```
 Best max_depth: 15
 OOB Score (Random Forest): 0.88
@@ -58,7 +62,7 @@ Best n_estimators: 6
 OOB Score (Bagging Classifier): 0.83
 ```
 
-## Confusion Matrices
+### Confusion Matrices
 - The confusion matrix for the Random Forest Classifier will display normalized values for each activity label.
 - The confusion matrix for the Bagging Classifier will also display normalized values for each activity label.
 
